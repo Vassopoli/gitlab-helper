@@ -6,10 +6,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.environ['GIT_TOKEN']
-user = os.environ['GIT_USER']
+username = os.environ['GIT_USERNAME']
 
 base_endpoint = 'https://gitlab.com/'
-user_info_endpoint = base_endpoint + 'api/v4/users?username=' + user
+user_info_endpoint = base_endpoint + 'api/v4/users?username=' + username
 
 headers = {'Authorization': 'Bearer ' + token}
 
